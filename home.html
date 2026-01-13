@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>YummyYohan's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <script type="module" src="js/app.js"></script>
-
+    
 
     <body>
         <main>
@@ -18,10 +18,11 @@
                     <li>education 3</li>
                     <li>education 4</li>
                 </ul>
-                <div class ="progress-bar">
-                    <progress id="level" max="365"></progress>
+                <div class ="progress-container" id="progress-bar-id">
+                    <p id="level-text"></p>
+                    <progress id="level-progress"></progress>
+                    
                 </div>
-                <img class="progress-bar" src ="/img/Temp-Progress-Bar.png" alt="Progress Bar"/>
             </section>
 
             <section class="about-me">
@@ -72,6 +73,7 @@
                 </div>
             </section>
         </main>
+        <script type="module" src="script/app.js"></script>
     </body>
 </html>
 

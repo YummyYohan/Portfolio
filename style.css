@@ -1,0 +1,30 @@
+/* 1. Basic styles for the <progress> element container */
+progress {
+  /* Remove default appearance for consistency */
+  -webkit-appearance: none;
+  appearance: none;
+  
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #664489; /* Default unfilled color for browsers that respect 'background-color' */
+}
+
+/* 2. Styling the *unfilled* bar for Webkit (Chrome, Safari, Edge, Opera) */
+progress::-webkit-progress-bar {
+  background-color: #664489;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. Styling the *filled* value portion for Webkit (Chrome, Safari, Edge, Opera) */
+progress::-webkit-progress-value {
+  background-color: #fb7ef7; /* The progress color */
+  border-radius: 10px;
+}
+
+/* 4. Styling the *filled* bar for Firefox */
+progress::-moz-progress-bar {
+  background-color: #fb7ef7; /* The progress color */
+  border-radius: 10px;
+}
