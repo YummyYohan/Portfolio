@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>YummyYohan's Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
+<html lang="en">
 
-    <body>
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <title>YummyYohan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <main>
+        <div class="top">
             <section class="profile">
                 <h1>YummyYohan</h1>
-                <img class="profile-img" src="/img/generic-profile.jpg" alt="Profile Image" width="200vw" height="200vh"/>
-                <ul class="education">
-                    <li>education 1</li>
-                    <li>education 2</li>
-                    <li>education 3</li>
-                    <li>education 4</li>
-                </ul>
-                <div class ="progress-container" id="progress-bar-id">
-                    <p id="level-text"></p>
+                <div class="profile-img-wrapper">
+                    <img class="profile-img" src="/img/generic-profile.jpg" alt="Profile Image" width="200vw"
+                        height="200vh" />
+                    <ul class="education">
+                        <li>education 1</li>
+                        <li>education 2</li>
+                        <li>education 3</li>
+                        <li>education 4</li>
+                    </ul>
+                </div>
+                <div class="progress-container" id="progress-bar-id">
                     <progress id="level-progress"></progress>
-                    
+                    <span id="level-text"></span>
                 </div>
             </section>
 
@@ -29,15 +33,17 @@
                 <h2>About Me</h2>
                 <p>blah blah blah me me me</p>
             </section>
+        </div>
 
+        <div class="mid">
             <section class="skills">
                 <h2>Skill Tracker</h2>
                 <ul class="skill-list">
-                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 1 img"/>skill 1</li>
-                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 2 img"/>skill 2</li>
-                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 3 img"/>skill 3</li>
-                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 4 img"/>skill 4</li>
-                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 4 img"/>skill 5</li>
+                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 1 img" />skill 1</li>
+                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 2 img" />skill 2</li>
+                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 3 img" />skill 3</li>
+                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 4 img" />skill 4</li>
+                    <li><img class="skill-icon" src="/img/generic-icon.png" alt="skill 4 img" />skill 5</li>
                 </ul>
             </section>
 
@@ -47,33 +53,43 @@
                     <p>this is where the project map will be showcased</p>
                 </div>
             </section>
+        </div>
 
-            <section class="goals">
-                <h2>Goals Completion</h2>
-                <img class="goals-img" src="/img/temp-progress.svg" alt="Goals Progress Bar">
-            </section>
+        <div class="bottom">
+            <div class="bot1">
+                <section class="goals">
+                    <h2>Goals Completion</h2>
+                    <img class="goals-img" src="/img/temp-progress.svg" alt="Goals Progress Bar" width="100px">
+                </section>
 
-            <section class="filler">
-                <p>fill this space with something small</p>
-            </section>
+                <section class="contacts">
+                    <h2>Contact Info</h2>
+                    <p>Potion bottles that link to my contact</p>
+                </section>
+            </div>
 
-            <section class="github">
-                <img class="github-img" src="/img/github.svg" alt="Github"/>
-            </section>
+            <div class="bot2">
+                <div class="bot2-1">
+                    <section class="filler">
+                        <p>fill this space with something small</p>
+                    </section>
 
-            <section class="contacts">
-                <h2>Contact Info</h2>
-                <p>Potion bottles that link to my contact</p>
-            </section>
-
-            <section class="experiences">
-                <h2>Experiences</h2>
-                <div class="experience-cards">
-                    <p>Here will be the experience cards</p>
+                    <section class="github">
+                        <img class="github-img" src="/img/github.svg" alt="Github" width="100px" />
+                    </section>
                 </div>
-            </section>
-        </main>
-        <script type="module" src="script/app.js"></script>
-    </body>
-</html>
 
+                <section class="experiences">
+                    <h2>Experiences</h2>
+                    <div class="experience-cards">
+                        <p>Here will be the experience cards</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+    <script type="module" src="script/app.js"></script>
+</body>
+
+</html>

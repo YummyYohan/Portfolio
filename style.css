@@ -1,13 +1,125 @@
+/* Colors:
+   Background: #0f0917
+   Flex boxes: #1c172d
+   Light Purple: #db83fd
+   Grey Purple: #654489
+   White text
+ */
+main {
+  background-color: #0f0917;
+  color: white;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+.mid {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 30%;
+  margin: 0 10%;
+  background-color: #1c172d;
+}
+
+.profile-img-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me {
+  flex: 1 1 0;
+  margin: 0 10%;
+  background-color: #1c172d;
+}
+
+.skills {
+  flex: 1 1 10%;
+  margin: 0 8%;
+  background-color: #1c172d;
+}
+
+.projects {
+  flex: 1 1 10%;
+  margin: 0 10%;
+  background-color: #1c172d;
+}
+
+.goals {
+  flex: 1 1 10%;
+  margin: 10% 10%;
+  background-color: #1c172d;
+}
+
+.contacts {
+  flex: 1 1 10%;
+  margin: 10% 10%;
+  background-color: #1c172d;
+}
+
+.filler {
+  flex: 1 1 10%;
+  margin: 0 10%;
+  background-color: #1c172d;
+}
+
+.github {
+  flex: 1 1 10%;
+  margin: 0 10%;
+  background-color: #1c172d;
+}
+
+.experiences {
+  flex: 1 1 10%;
+  margin: 0 10%;
+  background-color: #1c172d;
+}
+
+/* Bottom section flex boxes */
+.bot1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+
+.bot2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+
+.bot2-1 {
+  display: flex;
+  flex-direction: row;
+  margin: 10% 10%;
+
+}
+
 /* 1. Basic styles for the <progress> element container */
 progress {
   /* Remove default appearance for consistency */
   -webkit-appearance: none;
   appearance: none;
-  
+
   height: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: #664489; /* Default unfilled color for browsers that respect 'background-color' */
+  background-color: #664489;
+  /* Default unfilled color for browsers that respect 'background-color' */
 }
 
 /* 2. Styling the *unfilled* bar for Webkit (Chrome, Safari, Edge, Opera) */
@@ -19,12 +131,30 @@ progress::-webkit-progress-bar {
 
 /* 3. Styling the *filled* value portion for Webkit (Chrome, Safari, Edge, Opera) */
 progress::-webkit-progress-value {
-  background-color: #fb7ef7; /* The progress color */
+  background-color: #fb7ef7;
+  /* The progress color */
   border-radius: 10px;
 }
 
 /* 4. Styling the *filled* bar for Firefox */
 progress::-moz-progress-bar {
-  background-color: #fb7ef7; /* The progress color */
+  background-color: #fb7ef7;
+  /* The progress color */
   border-radius: 10px;
+}
+
+.progress-container {
+  position: relative;
+  width: 80%;
+}
+
+#level-progress {
+  width: 100%;
+}
+
+#level-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
