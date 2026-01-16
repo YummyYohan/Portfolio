@@ -34,59 +34,105 @@ main {
   flex: 1 1 30%;
   margin: 0 10%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
+
 
 .profile-img-wrapper {
   display: flex;
   flex-direction: row;
+  margin: 10% 0;
+}
+
+.profile-img-title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-img-title span{
+  margin: 10% 0 0 0;
+}
+
+span#grey {
+  color: grey;
+}
+
+.education {
+  list-style: none;
+}
+
+.education li {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+.header-divider {
+  border: none;
+  border-top: 0.15em solid grey;
+  margin: 1em 0;
+}
+
+.text-divider {
+  border: none;
+  border-top: 0.15em solid grey;
+  margin: 0.5em 0;
 }
 
 .about-me {
   flex: 1 1 0;
   margin: 0 10%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
 
 .skills {
   flex: 1 1 10%;
   margin: 0 8%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
 
 .projects {
   flex: 1 1 10%;
   margin: 0 10%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
 
 .goals {
   flex: 1 1 10%;
   margin: 10% 10%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
 
 .contacts {
   flex: 1 1 10%;
   margin: 10% 10%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
 
 .filler {
   flex: 1 1 10%;
   margin: 0 10%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
 
 .github {
   flex: 1 1 10%;
   margin: 0 10%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
 
 .experiences {
   flex: 1 1 10%;
   margin: 0 10%;
   background-color: #1c172d;
+  border-radius: 20px;
 }
 
 /* Bottom section flex boxes */
@@ -145,7 +191,8 @@ progress::-moz-progress-bar {
 
 .progress-container {
   position: relative;
-  width: 80%;
+  width: 100%;
+  margin-bottom: 10%;
 }
 
 #level-progress {
