@@ -79,11 +79,26 @@ span#grey {
   margin: 0.5em 0;
 }
 
+/* About Me Section */
+
 .about-me {
+  display: flex;
+  flex-direction: column;
   flex: 1 1 0;
   margin: 0 10%;
   background-color: #1c172d;
   border-radius: 20px;
+}
+
+.about-me h2 {
+  text-align: center;
+}
+
+
+
+.abou-me-svg{
+  width: 100%;
+  height: auto;
 }
 
 .skills {
