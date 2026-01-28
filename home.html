@@ -43,15 +43,51 @@
 
             <section class="about-me">
                 <h2>About Me</h2>
-                <!-- <img class="about-me-box" src="/img/box_only_transparent.svg" alt="About Me Box" width="600vw"> -->
-                <svg viewBox="0 0 1793 1303" class="about-me-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M1004.62 1254.5H1694.82V328.319L1466.67 91.527H46.7359V1002.96H752.592C759.043 1002.96 764.884 1005.68 769.103 1010.07L1004.62 1254.5ZM330.402 1250.52H217.196L75.8433 1102.38H189.05L330.402 1250.52ZM507.535 1250.52H394.329L252.973 1102.38H366.183L507.535 1250.52ZM684.688 1250.52H571.474L430.129 1102.38H543.339L684.688 1250.52ZM861.841 1250.52H748.631L607.282 1102.38H720.484L861.841 1250.52ZM1671.26 182.827L1495.11 0H1293.41L1252.35 43.0284H23.368C10.463 43.0284 0 53.8878 0 67.2777V1027.21C0 1040.61 10.463 1051.47 23.368 1051.47H742.907L975.227 1292.57C979.446 1298.88 986.467 1303 994.418 1303H1718.18C1731.09 1303 1741.55 1292.14 1741.55 1278.75V579.381L1793 526.502V309.175L1671.26 182.827Z"
-                        fill="#db83fd" stroke="white" stroke-width="2" />
 
-                    <text x="900" y="600" font-size="60" fill="white" text-anchor="middle"> Hello SVG! </text>
+                <svg viewBox="0 0 1793 1303" class="about-me-svg" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+                        <mask id="pathMask">
+                            <path d="M1004.62 1254.5H1694.82V328.319L1466.67 91.527H46.7359V1002.96H752.592C759.043 1002.96 764.884 1005.68 769.103 1010.07L1004.62 1254.5
+          M330.402 1250.52H217.196L75.8433 1102.38H189.05L330.402 1250.52
+          M507.535 1250.52H394.329L252.973 1102.38H366.183L507.535 1250.52
+          M684.688 1250.52H571.474L430.129 1102.38H543.339L684.688 1250.52
+          M861.841 1250.52H748.631L607.282 1102.38H720.484L861.841 1250.52
+          M1671.26 182.827L1495.11 0H1293.41L1252.35 43.0284H23.368
+          C10.463 43.0284 0 53.8878 0 67.2777V1027.21
+          C0 1040.61 10.463 1051.47 23.368 1051.47H742.907
+          L975.227 1292.57C979.446 1298.88 986.467 1303 994.418 1303
+          H1718.18C1731.09 1303 1741.55 1292.14 1741.55 1278.75
+          V579.381L1793 526.502V309.175L1671.26 182.827Z" fill="none" stroke="white" stroke-width="18"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </mask>
+
+                        <linearGradient id="rgbGradient" x1="0%" y1="0%" x2="100%" y2="0%"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" />
+                            <stop offset="33%" />
+                            <stop offset="66%" />
+                            <stop offset="100%" />
+                        </linearGradient>
+                    </defs>
+
+                    <rect x="-150%" y="-150%" width="400%" height="400%" fill="url(#rgbGradient)"
+                        mask="url(#pathMask)" />
+
+                    <path d="(same path)" fill="#1c172d" />
                 </svg>
 
+                <div class="controls">
+                    <label>
+                        Speed
+                        <input id="speed" type="range" min="0" max="10" step="0.1" value="3">
+                    </label>
+
+                    <label>
+                        Color Scheme
+                        <input id="scheme" type="range" min="0" max="10" step="0.01" value="0">
+                    </label>
+                </div>
             </section>
         </div>
 

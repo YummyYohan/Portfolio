@@ -10,6 +10,10 @@ main {
   color: white;
 }
 
+body {
+  margin: 0;
+}
+
 .top {
   display: flex;
   flex-direction: row;
@@ -32,9 +36,10 @@ main {
   flex-direction: column;
   align-items: center;
   flex: 1 1 30%;
-  margin: 0 10%;
+  margin: 0 5% 0 10%;
   background-color: #1c172d;
   border-radius: 20px;
+  padding: 0 5%;
 }
 
 
@@ -44,13 +49,13 @@ main {
   margin: 10% 0;
 }
 
-.profile-img-title{
+.profile-img-title {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.profile-img-title span{
+.profile-img-title span {
   margin: 10% 0 0 0;
 }
 
@@ -67,6 +72,7 @@ span#grey {
   gap: 0.5vw;
   align-items: center;
 }
+
 .header-divider {
   border: none;
   border-top: 0.15em solid grey;
@@ -84,10 +90,13 @@ span#grey {
 .about-me {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex: 1 1 0;
-  margin: 0 10%;
+  margin: 0 10% 0 0;
   background-color: #1c172d;
   border-radius: 20px;
+  padding: 0 5%;
 }
 
 .about-me h2 {
@@ -95,10 +104,32 @@ span#grey {
 }
 
 
-
-.abou-me-svg{
-  width: 100%;
+.about-me-svg {
+  width: 30vw;
   height: auto;
+}
+
+.about-me text {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+input[type="range"] {
+  width: 160px;
 }
 
 .skills {
